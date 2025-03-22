@@ -1,21 +1,16 @@
 # ys_gpt
-This is a personal project using the openai API
 
-How does it work??
+`ys_gpt` is a personal project that utilizes the OpenAI API to generate feedback on Python scripts by providing a prompt based on the script's content.
 
-In your terminal run the script and parse in the the file path of the script you want to get reviewed.
-    - This will read your file and will be use the contents as a prompt to ask a questions. 
-    - In the terminal you will see your answer generated.
+## Project Overview
 
-KEY NOTES:
-======================================================
-def configure():
-    load_dotenv()
-    openai.api_key = os.getenv('api_key')
-======================================================
+`ys_gpt` is designed to provide quick feedback on your Python scripts using OpenAI's GPT-3. Whether you're writing a new script, maintaining an existing one, or looking for ways to improve your code, this tool helps by analyzing your code and providing recommendations on its structure, readability, and best practices.
 
-1)In order to make the function above work you need to create a ".env" file which you will use to store your API key. 
-     - In the file simply put "api_key=......." (no quotes needed)
-     - Make sure it is in the same dir as the gpt script. 
-     - I have not included my .env file because I dont want anyone to see the API key because this it costs money to use the API
-     
+## How It Works
+
+1. **Run the Script:**
+   - In your terminal, execute the script and provide the file path of the Python script you want to have reviewed.
+   
+   Example usage:
+   ```bash
+   python ys_gpt.py /path/to/your/script.py
