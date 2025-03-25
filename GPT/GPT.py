@@ -47,7 +47,7 @@ def main():
         lines = file.readlines()
 
     # Define the prompt
-    prompt = "Could you rate my python script out of 10 and give me feedback on ow I could improve it?\n\n" + \
+    prompt = "Could you rate my python script out of 10 and give me feedback on how I could improve it?\n\n" + \
         "".join(lines) + "\n\n"
     print(prompt)
 
